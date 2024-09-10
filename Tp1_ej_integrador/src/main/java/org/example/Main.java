@@ -41,7 +41,7 @@ public class Main {
             System.out.println("\t" + clientAux);
         }
 
-        System.out.println("-----------------CRUD----------------");
+        System.out.println("\t-----------------Ejemplos de uso del CRUD----------------");
         /*------------------Obtener cliente por Id-----------------------*/
         System.out.println("Obtener cliente por id = 1: "+daoClient.get(1));
         Cliente c = new Cliente(1, "Xantha M. Guzman", "vitae@incursuset.org");
@@ -54,16 +54,6 @@ public class Main {
 
         /*------------------Obtener factura por Id-----------------------*/
         System.out.println("La factura con id 1 es: "+daoInvoice.get(1));
-
-        /*------------------Modificar factura-----------------------*/
-        Factura f = new Factura(1,1);
-        // Actualiza idCliente de la factura con idFactura 1 a 2
-        daoInvoice.update(f, new String[]{"2"});
-        System.out.println("Factura modificada: " + daoInvoice.get(1));
-
-        // Vuelve a actualizar idCliente de la factura con idFactura 1 a 1
-        daoInvoice.update(f, new String[]{"1"});
-        System.out.println("Vuelvo a los valores originales: " + daoInvoice.get(1));
 
     }
 
@@ -82,9 +72,8 @@ public class Main {
     }
 
     public static void populateTables() throws SQLException, IOException {
-
-
-       CSVParser client = CSVFormat.DEFAULT.withHeader().parse(new FileReader("./Tp1_ej_integrador\\src\\main\\resources\\csv\\clientes.csv"));
+        //Cambiar las rutas de acuerdo a su directorio
+        CSVParser client = CSVFormat.DEFAULT.withHeader().parse(new FileReader("./Tp1_ej_integrador\\src\\main\\resources\\csv\\clientes.csv"));
         CSVParser invoice = CSVFormat.DEFAULT.withHeader().parse(new FileReader("./Tp1_ej_integrador\\src\\main\\resources\\csv\\facturas.csv"));
         CSVParser invoiceProduct = CSVFormat.DEFAULT.withHeader().parse(new FileReader("./Tp1_ej_integrador\\src\\main\\resources\\csv\\facturas-productos.csv"));
         CSVParser product = CSVFormat.DEFAULT.withHeader().parse(new FileReader("./Tp1_ej_integrador\\src\\main\\resources\\csv\\productos.csv"));

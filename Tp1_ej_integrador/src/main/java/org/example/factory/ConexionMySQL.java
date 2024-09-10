@@ -15,7 +15,7 @@ public class ConexionMySQL extends AbstractFactory {
     private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
     private static final String URI = "jdbc:mysql://localhost:3306/integrador1";
     private static final String USER = "root";
-    private static final String PASS = " "; //Ingresar su contraseña si es necesario
+    private static final String PASS = ""; //Ingresar su contraseña si es necesario
 
     private static ConexionMySQL instance = new ConexionMySQL();
 
