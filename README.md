@@ -14,7 +14,7 @@
 * JAVA, MySQL
 * Patrones de arquitecturas web: DAO, Factory Method, Abstract Factory
   
-*Autores: Aguerralde Felicitas, De La Torre Giuiliana, Farias Julian, Gramuglia Eliana, Guidi Franco, *
+*Autores: Aguerralde Felicitas, De La Torre Giuiliana, Gramuglia Eliana, Guidi Franco, Rodriguez Farias Julian*
 
 ``` Nota: Crear una base con el nombre: integrador1
 ``` Cambiar el directorio de los archivos .csv
