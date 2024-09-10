@@ -3,8 +3,8 @@
 **Descripción: El trabajo consiste en la implementación un programa utilizando JDBC que cree el esquema con las siguientes tablas:**
 **Características:**
 * [Cliente]
-  |   Cliente   |
-  |--- |--- |---|
+  |Cliente|
+  |---|---|---|
   |idCliente int|
   |nombre varchar(500)|
   |email varchar(500)|
